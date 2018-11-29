@@ -1,0 +1,13 @@
+Minutes=3
+Seconds=5
+t=60*Minutes+Seconds
+while(t!=0){
+Sys.sleep(1)
+flush.console()
+MI=floor(t/60)
+SE=t%%60
+if(SE<10){SE<-paste(c("0",SE),collapse="")}
+TIM=paste(c(MI,":",SE),collapse="")
+print(TIM)
+t=t-1
+}
